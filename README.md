@@ -1,19 +1,19 @@
 # Chương trình này chỉ chạy được trên linux, shell zsh
 ## shell zsh:
-#### Kiểm tra:
+### Kiểm tra:
 ```
 zsh --version
 ```
-#### Cài đặt:
+### Cài đặt:
 ```
 sudo apt update
 sudo apt install zsh
 ```
-#### Kiểm tra shell mặc định:
+### Kiểm tra shell mặc định:
 ```
 echo $SHELL
 ```
-#### Đặt zsh làm shell mặc định rồi đăng nhập lại:
+### Đặt zsh làm shell mặc định rồi đăng nhập lại:
 ```
 chsh -s $(which zsh) 
 ```
