@@ -1,22 +1,42 @@
 # Chương trình này chỉ chạy được trên linux, shell zsh
-## Cài các gói ubuntu cần thiết:
+## shell zsh:
+#### Kiểm tra:
+```
+zsh --version
+```
+#### Cài đặt:
+```
+sudo apt update
+sudo apt install zsh
+```
+#### Kiểm tra shell mặc định:
+```
+echo $SHELL
+```
+#### Đặt zsh làm shell mặc định rồi đăng nhập lại:
+```
+chsh -s $(which zsh) 
+```
+## Các gói ubuntu cần thiết:
 ### build-essential (gcc, g++ make):
+#### Kiểm tra:
+```
+gcc --version
+```
+#### Cài đặt:
 ```
 sudo apt update
 sudo apt install build-essential
 ```
-#### Kiểm tra gói gcc:
-```
-gcc --version
-```
 ### GTK 3:
+#### Kiểm tra: 
+``` 
+pkg-config --modversion gtk+-3.0
+```
+#### Cài đặt:
 ```
 sudo apt update
 sudo apt install libgtk-3-dev
-```
-#### Kiểm tra gói GTK 3: 
-``` 
-pkg-config --modversion gtk+-3.0
 ```
 ## Thêm lệnh bật timestamp cho .zshrc:
 ```
