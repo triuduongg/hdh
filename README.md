@@ -10,6 +10,14 @@ sudo apt install build-essential
 sudo apt update
 sudo apt install libgtk-3-dev
 ```
+## Thêm lệnh bật timestamp cho .zshrc:
+```
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+```
 ## Biên dịch chương trình
 ### history.c
 ``` gcc -o h history.c ```
