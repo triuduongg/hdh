@@ -12,19 +12,11 @@ sudo apt install libgtk-3-dev
 ```
 ## Biên dịch chương trình
 ### history.c
-```
-gcc -o h history.c
-```
+``` gcc -o h history.c
 ### gui.c
-```
-gcc -o gui gui.c `pkg-config --cflags --libs gtk+-3.0
-```
+``` gcc -o gui gui.c `pkg-config --cflags --libs gtk+-3.0
 ## Chạy chương trình
 ### history.c
-```
-./h
-```
+``` ./h
 ### gui.c
-```
-./gui
-```
+``` ./gui
