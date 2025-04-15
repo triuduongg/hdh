@@ -1,4 +1,4 @@
-# Chương trình này chỉ chạy được trên linux
+# Chương trình này chỉ chạy được trên linux, shell zsh
 ## Cài các gói ubuntu cần thiết:
 ### build-essential (gcc, g++ make):
 ```
