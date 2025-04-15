@@ -17,6 +17,19 @@ echo $SHELL
 ```
 chsh -s $(which zsh) 
 ```
+### Bật timestamp để dùng được chức năng time:
+#### Mở .zshrc:
+```
+nano ~/.zshrc
+```
+#### Thêm lệnh vào rồi Ctrl+O, Enter, Ctrl+X:
+```
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+```
 ## Các gói ubuntu cần thiết:
 ### build-essential (gcc, g++ make):
 #### Kiểm tra:
@@ -37,14 +50,6 @@ pkg-config --modversion gtk+-3.0
 ```
 sudo apt update
 sudo apt install libgtk-3-dev
-```
-## Thêm lệnh bật timestamp cho .zshrc:
-```
-setopt EXTENDED_HISTORY
-setopt INC_APPEND_HISTORY
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
 ```
 ## Biên dịch chương trình
 ### history.c
